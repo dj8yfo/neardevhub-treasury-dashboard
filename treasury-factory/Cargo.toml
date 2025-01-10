@@ -53,3 +53,6 @@ debug = false
 panic = "abort"
 # Opt into extra safety checks on arithmetic operations https://stackoverflow.com/a/64136471/249801
 overflow-checks = true
+
+[patch.crates-io]
+cargo-near-build = { git = 'https://github.com/dj8yfo/cargo-near.git', rev = '57c58ecb8549f26a31d9a4dab629c8cb9a865d03' }

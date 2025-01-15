@@ -379,13 +379,12 @@ dependencies = [
 [[package]]
 name = "cargo-near-build"
 version = "0.4.2"
-source = "git+https://github.com/dj8yfo/cargo-near.git?rev=b8f7a6645e9ca9aa321237dcef75becd8cc1cb6e#b8f7a6645e9ca9aa321237dcef75becd8cc1cb6e"
+source = "git+https://github.com/dj8yfo/cargo-near.git?rev=f462957eaacb6e043fecf19c55ec72e2c07c1fbe#f462957eaacb6e043fecf19c55ec72e2c07c1fbe"
 dependencies = [
  "bon",
  "bs58 0.5.1",
  "camino",
  "cargo_metadata",
- "cc",
  "colored",
  "dunce",
  "eyre",
@@ -525,7 +524,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "117725a109d387c937a1533ce01b450cbde6b88abceea8473c4d7a85853cda3c"
 dependencies = [
  "lazy_static",
- "windows-sys 0.52.0",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -932,7 +931,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "33d852cb9b869c2a9b3df2f71a3074817f01e1844f839a144f5fcef059a4eb5d"
 dependencies = [
  "libc",
- "windows-sys 0.52.0",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -3012,7 +3011,7 @@ dependencies = [
  "errno",
  "libc",
  "linux-raw-sys",
- "windows-sys 0.52.0",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -3612,7 +3611,7 @@ dependencies = [
  "getrandom",
  "once_cell",
  "rustix",
- "windows-sys 0.52.0",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -4187,7 +4186,7 @@ version = "0.1.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cf221c93e13a30d793f7645a0e7762c55d169dbb0a49671918a2319d289b10bb"
 dependencies = [
- "windows-sys 0.52.0",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]

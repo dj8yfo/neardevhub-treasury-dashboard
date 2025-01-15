@@ -31,11 +31,15 @@ fn main() {
         .expect("Failed to write to output file");
 
     let web4_wasm_path = "../web4/treasury-web4/target/near/treasury_web4.wasm";
+
     if !fs::exists(web4_wasm_path).unwrap() {
         let build_opts = BuildOpts::builder()
             .manifest_path("../web4/treasury-web4/Cargo.toml".into())
+            .override_nep330_contract_path("web4/treasury-web4")
             .build();
-        let build_script_opts = BuildScriptOpts::builder().build();
+        let build_script_opts = BuildScriptOpts::builder()
+            .result_env_key("BUILD_RS_WEB4_TREASURY_WEB4_WASM")
+            .build();
         let build_opts_extended = BuildOptsExtended::builder()
             .build_opts(build_opts)
             .build_script_opts(build_script_opts)

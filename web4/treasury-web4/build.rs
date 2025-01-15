@@ -12,8 +12,6 @@ macro_rules! p {
 fn main() {
     // Change working directory to the directory of the script (similar to process.chdir)
     let current_dir = Path::new(env!("CARGO_MANIFEST_DIR")).join("../public_html");
-    p!("RUSTFLAGS = {:?}", option_env!("RUSTFLAGS"));
-    p!("CARGO_ENCODED_RUSTFLAGS = {:?}", option_env!("CARGO_ENCODED_RUSTFLAGS"));
 
     // Read the index.html file
     let index_path = current_dir.join("index.html");
